@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="img/Motto-logo1.png"/>
+  <script src="https://kit.fontawesome.com/d0625bbe31.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  #loader svg {
+     display: none;
+  }
+   .blobs {
+     filter: url(#goo);
+     width: 300px;
+     height: 300px;
+     position: relative;
+     overflow: hidden;
+     border-radius: 70px;
+     transform-style: preserve-3d;
+  }
+   .blobs .blob-center {
+     transform-style: preserve-3d;
+     position: absolute;
+     background: rgba(200, 35, 51, 1);
+     top: 50%;
+     left: 50%;
+     width: 30px;
+     height: 30px;
+     transform-origin: left top;
+     transform: scale(0.9) translate(-50%, -50%);
+     animation: blob-grow linear 3.4s infinite;
+     border-radius: 50%;
+     box-shadow: 0 -10px 40px -5px rgba(200, 35, 51, 1);
+  }
+   .blob {
+     position: absolute;
+     background: rgba(200, 35, 51, 1);
+     top: 50%;
+     left: 50%;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     animation: blobs ease-out 3.4s infinite;
+     transform: scale(0.9) translate(-50%, -50%);
+     transform-origin: center top;
+     opacity: 0;
+  }
+   .blob:nth-child(1) {
+     animation-delay: 0.2s;
+  }
+   .blob:nth-child(2) {
+     animation-delay: 0.4s;
+  }
+   .blob:nth-child(3) {
+     animation-delay: 0.6s;
+  }
+   .blob:nth-child(4) {
+     animation-delay: 0.8s;
+  }
+   .blob:nth-child(5) {
+     animation-delay: 1s;
+  }
+   @keyframes blobs {
+     0% {
+       opacity: 0;
+       transform: scale(0) translate(calc(-330px - 50%), -50%);
+    }
+     1% {
+       opacity: 1;
+    }
+     35%, 65% {
+       opacity: 1;
+       transform: scale(0.9) translate(-50%, -50%);
+    }
+     99% {
+       opacity: 1;
+    }
+     100% {
+       opacity: 0;
+       transform: scale(0) translate(calc(330px - 50%), -50%);
+    }
+  }
+   @keyframes blob-grow {
+     0%, 39% {
+       transform: scale(0) translate(-50%, -50%);
+    }
+     40%, 42% {
+       transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+     43%, 44% {
+       transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+     45%, 46% {
+       transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+     47%, 48% {
+       transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+     52% {
+       transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+     54% {
+       transform: scale(1.7, 1.6) translate(-50%, -50%);
+    }
+     58% {
+       transform: scale(1.8, 1.7) translate(-50%, -50%);
+    }
+     68%, 70% {
+       transform: scale(1.7, 1.5) translate(-50%, -50%);
+    }
+     78% {
+       transform: scale(1.6, 1.4) translate(-50%, -50%);
+    }
+     80%, 81% {
+       transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+     82%, 83% {
+       transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+     84%, 85% {
+       transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+     86%, 87% {
+       transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+     90%, 91% {
+       transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+     92%, 100% {
+       transform: scale(0) translate(-50%, -50%);
+    }
+  }
+  .center {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    margin: auto;
+  }
+  @media (max-width: 771px) {
+    .center{
+      left: 20%;
+    }
+  }
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  </style>
+  <title>motto | Contact Us</title>
+</head>
+
+<body class="contact-p">
+  <div id="loader" class="center">
+    <div class="blobs">
+  <div class="blob-center"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+  </defs>
+  </svg>
+  </div>
+  <script type="text/javascript">
+    document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        $('body').addClass('stop-scrolling');
+        document.querySelector("#loader").style.visibility = "visible";
+      } else {
+        document.querySelector("#loader").style.display = "none";
+        $('body').removeClass('stop-scrolling');
+        document.querySelector("body").style.visibility = "visible";
+      }
+    };
+  </script>
+  <div class="" id="h"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav">
+    <a class="navbar-brand" href="#"><img src="img/Motto-logo.png"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav f-ul-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="work.html">Our Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-social">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <header>
+    <div class="container-fluid">
+      <div class="row">
+        <iframe class="col-lg-12"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.1018726782822!2d32.888604229909255!3d24.06933300860493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1436635ac1db978b%3A0xd2fa4b0baf4ff5fb!2z2LnZhdin2LHYp9iqINin2YTYqtij2YXZitmGINin2YTYo9mH2YTZitip2Iwg2KfZhNiz2KfYr9in2KrYjCDYtNmK2KfYrtipINij2YjZhNmJ2Iwg2YLYs9mFINij2LPZiNin2YbYjCDYo9iz2YjYp9mG2Iwg2YXYtdix!5e0!3m2!1sar!2sua!4v1576463849448!5m2!1sar!2sua"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="card">
+            <div class="card-header">
+              get in touch
+            </div>
+            <div class="card-body">
+              <div><i class="fas fa-map-marker-alt"></i> <span>Lorem ipsum dolor sit</span></div>
+              <div>
+                <i class="fas fa-phone"></i><span>01152306375</span>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i><span>info@motto.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+  <section class="con-p">
+    <div class="container">
+      <div class="row">
+        <h1 class="col-lg-12">Contact Us</h1>
+        <hr >
+      </div>
+      <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Name</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Phone</label>
+      <input type="number" class="form-control" id="inputEmail4" placeholder="Phone">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Your message</label>
+      <textarea class="form-control" name="msg" rows="5" cols="59" placeholder="Your message"></textarea>
+    </div>
+    <div class="form-group col-md-6 sb">
+    <button type="submit" class="btn btn-danger form-control">Submit</button>
+  </div>
+  </div>
+</form>
+    </div>
+ </section>
+  <!-- section footer  -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <img src="img/Motto-logo.png" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>info</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href=""><i class="fa fa-angle-double-right"></i>Lorem ipsum dolor sit</a></li>
+            <li><a href=""><i class="fa fa-angle-double-right"></i>01152306375</a></li>
+            <li><a href=""><i class="fa fa-angle-double-right"></i>info@motto.com</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <button type="button" class="btn btn-danger btn-lg more-btn" style="width: 150px;">contact us</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href=""><i class="fab fa-behance"></i></a></li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+  </div>
+  <!-- Script to add class name -->
+  <script>
+    function addClass() {
+      var v = document.getElementById("h");
+      v.classList.toggle("overlay-red");
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('../fonts/gothamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('../fonts/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+  font-family: 'gothamlight', sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'gothammedium', sans-serif;
+
+}
+
+hr {
+  background-color: #f6eec9;
+  height: 3px;
+  width: 260px;
+  border: none;
+  margin-top: 0;
+}
+.lead{
+  text-align: left;
+  text-justify: inter-word;
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* navbar */
+nav{
+  font-size: 19px;
+}
+nav i{
+  font-size: 21px;
+}
+.f-ul-nav li{
+  margin-right: 10px;
+}
+.f-ul-nav{
+    margin-left: 30%;
+}
+nav img{
+  width: 95px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: #fff;
+  transition: all .25s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #dc3545;
+}
+/************************************************/
+.proj header h1{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 280px;
+    padding: 15px;
+    color: #fff;
+    margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 185px;
+}
+.proj header{
+  height: 500px;
+  margin-bottom: 50px;
+}
+.proj .content{
+  text-align: center;
+}
+.proj .content img{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#content-1 p{
+  width: 57%;
+    margin-left: auto;
+    margin-right: auto;
+}
